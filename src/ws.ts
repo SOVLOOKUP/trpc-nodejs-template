@@ -14,11 +14,13 @@ export const upgradeWebSocket = (onConnection: ReturnType<typeof getWSConnection
     const client: WebSocket = webSocketPair[0]
     const server: WebSocket = webSocketPair[1]
 
-    await onConnection(new Proxy({
+    await onConnection({
         send: (msg: string) => {
             console.log(msg, server.readyState)
             server.send(msg)
         },
+        // @ts-ignore
+        readyState: server.readyState,
         // @ts-ignore
         on: (type, lis) => {
             if (type === "message") {
@@ -39,18 +41,7 @@ export const upgradeWebSocket = (onConnection: ReturnType<typeof getWSConnection
         close: (c, r) => {
             server.close(c, r?.toString())
         }
-    }, {
-        get(target, p) {
-            if (p === "readyState") {
-                return server.readyState
-            } else {
-                // @ts-ignore
-                return target[p]
-            }
-        },
-    }),
-        // @ts-ignore
-        c.req)
+    }, c.req)
 
     server.accept()
 
