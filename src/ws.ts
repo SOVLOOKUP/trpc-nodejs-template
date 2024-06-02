@@ -15,7 +15,10 @@ export const upgradeWebSocket = (onConnection: ReturnType<typeof getWSConnection
     const server: WebSocket = webSocketPair[1]
 
     await onConnection({
-        send: (msg: string) => server.send(msg),
+        send: (msg: string) => {
+            console.log(msg)
+            server.send(msg)
+        },
         // @ts-ignore
         readyState: server.readyState,
         // @ts-ignore

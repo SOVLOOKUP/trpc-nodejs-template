@@ -23,6 +23,7 @@ client.sub.subscribe(undefined, {
     },
     onComplete() {
         console.log("结束")
+        process.exit()
     },
     onError(err) {
         console.log(err)
