@@ -1,12 +1,9 @@
 {
-  "name": "tradex",
+  "name": "trpc-cloudflare-template",
   "version": "0.0.1",
   "description": "",
   "type": "module",
-  "keywords": [
-    "trade",
-    "web3"
-  ],
+  "keywords": [],
   "author": "sovlookup",
   "scripts": {
     "dev": "wrangler dev src/index.ts",
