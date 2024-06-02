@@ -16,6 +16,7 @@ export const upgradeWebSocket = (onConnection: ReturnType<typeof getWSConnection
 
     await onConnection({
         send: (msg: string) => {
+            // todo
             console.log(msg, server.readyState)
             server.send(msg)
         },
@@ -35,7 +36,7 @@ export const upgradeWebSocket = (onConnection: ReturnType<typeof getWSConnection
         once: (type, fn) => {
             if (type === "close") {
                 // @ts-ignore
-                server.addEventListener("close", fn)
+                server.addEventListener("close", () => { fn(); console.log(c.res) })
             }
         },
         close: (c, r) => {
