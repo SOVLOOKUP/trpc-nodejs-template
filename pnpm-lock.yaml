@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/trpc-server':
         specifier: ^0.3.1
-        version: 0.3.1(@trpc/server@11.0.0-rc.390)(hono@4.4.2)
+        version: 0.3.1(@trpc/server@11.0.0-rc.390)(hono@4.4.3)
       '@trpc/client':
         specifier: 11.0.0-rc.390
         version: 11.0.0-rc.390(@trpc/server@11.0.0-rc.390)
@@ -19,7 +19,7 @@ importers:
         version: 11.0.0-rc.390
       hono:
         specifier: ^4.4.2
-        version: 4.4.2
+        version: 4.4.3
       superjson:
         specifier: ^2.2.1
         version: 2.2.1
@@ -660,8 +660,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.4.2:
-    resolution: {integrity: sha512-bRhZ+BM9r04lRN2i9wiZ18yQNbZxHsmmRIItoAb43nRkHnIDsFhFh4mJ0seEs06FvenibpAgSVNHQ8ZzcDQx2A==}
+  hono@4.4.3:
+    resolution: {integrity: sha512-G7rTruKzrHXPz1KB4B50deKydPA9+aeei+WC1hikP0abN9N+a6yORuweageaqWocYfYNkpoqA5ezGV2mzQasvw==}
     engines: {node: '>=16.0.0'}
 
   human-signals@5.0.0:
@@ -1210,10 +1210,10 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/trpc-server@0.3.1(@trpc/server@11.0.0-rc.390)(hono@4.4.2)':
+  '@hono/trpc-server@0.3.1(@trpc/server@11.0.0-rc.390)(hono@4.4.3)':
     dependencies:
       '@trpc/server': 11.0.0-rc.390
-      hono: 4.4.2
+      hono: 4.4.3
 
   '@jest/schemas@29.6.3':
     dependencies:
@@ -1514,7 +1514,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.4.2: {}
+  hono@4.4.3: {}
 
   human-signals@5.0.0: {}
 
