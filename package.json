@@ -1,29 +1,24 @@
 {
-  "name": "trpc-cloudflare-template",
+  "name": "trpc-ali",
   "version": "0.0.1",
   "description": "",
   "type": "module",
   "keywords": [],
   "author": "sovlookup",
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts",
+    "dev": "tsx --watch src/index.ts",
     "test": "vitest"
   },
   "dependencies": {
-    "@hono/trpc-server": "^0.3.1",
-    "@trpc/client": "11.0.0-rc.390",
-    "@trpc/server": "11.0.0-rc.390",
-    "hono": "^4.4.2",
-    "superjson": "^2.2.1",
-    "ws": "^8.17.0",
+    "@hono/node-server": "^1.13.7",
+    "@hono/trpc-server": "^0.3.2",
+    "@trpc/client": "11.0.0-rc.638",
+    "@trpc/server": "11.0.0-rc.638",
+    "destr": "^2.0.3",
+    "hono": "^4.6.11",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240529.0",
-    "@types/node": "^20.13.0",
-    "@types/ws": "^8.5.10",
-    "vitest": "^1.6.0",
-    "wrangler": "^3.57.2"
+    "@types/node": "^22.9.1"
   }
 }
