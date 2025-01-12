@@ -12,8 +12,8 @@
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "@hono/trpc-server": "^0.3.2",
-    "@trpc/client": "11.0.0-rc.638",
-    "@trpc/server": "11.0.0-rc.638",
+    "@trpc/client": "11.0.0-rc.700",
+    "@trpc/server": "11.0.0-rc.700",
     "destr": "^2.0.3",
     "hono": "^4.6.11",
     "zod": "^3.23.8"
