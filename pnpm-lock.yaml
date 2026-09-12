@@ -12,8 +12,8 @@ importers:
         specifier: ^1.13.7
         version: 1.13.7(hono@4.6.11)
       '@hono/trpc-server':
-        specifier: ^0.3.2
-        version: 0.3.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)
+        specifier: ^0.4.0
+        version: 0.4.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)
       '@trpc/client':
         specifier: 11.0.0-rc.638
         version: 11.0.0-rc.638(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -36,9 +36,6 @@ importers:
       tsup:
         specifier: ^8.3.5
         version: 8.3.5(postcss@8.4.38)(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
 
 packages:
 
@@ -207,12 +204,12 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/trpc-server@0.3.2':
-    resolution: {integrity: sha512-dTKDrSldjBn0hi9FjHOGdiHgMCWPoW5NaBUTQRNLyVL9JcJJu9oiwTFoIscPFxc9CF2rAeA8aRGHoFJK+A8cLw==}
+  '@hono/trpc-server@0.4.2':
+    resolution: {integrity: sha512-3TDrc42CZLgcTFkXQba+y7JlRWRiyw1AqhLqztWyNS2IFT+3bHld0lxKdGBttCtGKHYx0505dM67RMazjhdZqw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@trpc/server': ^10.10.0 || >11.0.0-rc
-      hono: '>=4.*'
+      hono: '>=4.0.0'
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1469,7 +1466,7 @@ snapshots:
     dependencies:
       hono: 4.6.11
 
-  '@hono/trpc-server@0.3.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)':
+  '@hono/trpc-server@0.4.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)':
     dependencies:
       '@trpc/server': 11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       hono: 4.6.11
@@ -2653,7 +2650,8 @@ snapshots:
       mime-types: 2.1.35
     optional: true
 
-  typescript@5.6.3: {}
+  typescript@5.6.3:
+    optional: true
 
   undici-types@6.19.8: {}
 
