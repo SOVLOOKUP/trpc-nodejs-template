@@ -12,8 +12,8 @@ importers:
         specifier: ^1.13.7
         version: 1.13.7(hono@4.6.11)
       '@hono/trpc-server':
-        specifier: ^0.3.2
-        version: 0.3.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)
+        specifier: ^0.4.0
+        version: 0.4.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)
       '@trpc/client':
         specifier: 11.0.0-rc.638
         version: 11.0.0-rc.638(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -35,10 +35,7 @@ importers:
         version: 22.9.1
       tsup:
         specifier: ^8.3.5
-        version: 8.3.5(postcss@8.4.38)(typescript@5.6.3)
-      typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
+        version: 8.3.5(postcss@8.4.31)(typescript@5.6.3)
 
 packages:
 
@@ -207,12 +204,12 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/trpc-server@0.3.2':
-    resolution: {integrity: sha512-dTKDrSldjBn0hi9FjHOGdiHgMCWPoW5NaBUTQRNLyVL9JcJJu9oiwTFoIscPFxc9CF2rAeA8aRGHoFJK+A8cLw==}
+  '@hono/trpc-server@0.4.2':
+    resolution: {integrity: sha512-3TDrc42CZLgcTFkXQba+y7JlRWRiyw1AqhLqztWyNS2IFT+3bHld0lxKdGBttCtGKHYx0505dM67RMazjhdZqw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@trpc/server': ^10.10.0 || >11.0.0-rc
-      hono: '>=4.*'
+      hono: '>=4.0.0'
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1058,10 +1055,6 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.4.38:
-    resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
-    engines: {node: ^10 || ^12 || >=14}
-
   process-warning@4.0.0:
     resolution: {integrity: sha512-/MyYDxttz7DfGMMHiysAsFE4qF+pQYAA8ziO/3NcRVrQ5fSk+Mns4QZA/oRPFzvcqNoVJXQNWNAsdwBXLUkQKw==}
 
@@ -1469,7 +1462,7 @@ snapshots:
     dependencies:
       hono: 4.6.11
 
-  '@hono/trpc-server@0.3.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)':
+  '@hono/trpc-server@0.4.2(@trpc/server@11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(hono@4.6.11)':
     dependencies:
       '@trpc/server': 11.0.0-rc.638(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       hono: 4.6.11
@@ -2303,23 +2296,16 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  postcss-load-config@6.0.1(postcss@8.4.38):
+  postcss-load-config@6.0.1(postcss@8.4.31):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
-      postcss: 8.4.38
+      postcss: 8.4.31
 
   postcss@8.4.31:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
-      source-map-js: 1.2.0
-    optional: true
-
-  postcss@8.4.38:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.1.1
       source-map-js: 1.2.0
     optional: true
 
@@ -2620,7 +2606,7 @@ snapshots:
   tslib@2.6.2:
     optional: true
 
-  tsup@8.3.5(postcss@8.4.38)(typescript@5.6.3):
+  tsup@8.3.5(postcss@8.4.31)(typescript@5.6.3):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -2630,7 +2616,7 @@ snapshots:
       esbuild: 0.24.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(postcss@8.4.38)
+      postcss-load-config: 6.0.1(postcss@8.4.31)
       resolve-from: 5.0.0
       rollup: 4.27.3
       source-map: 0.8.0-beta.0
@@ -2639,7 +2625,7 @@ snapshots:
       tinyglobby: 0.2.10
       tree-kill: 1.2.2
     optionalDependencies:
-      postcss: 8.4.38
+      postcss: 8.4.31
       typescript: 5.6.3
     transitivePeerDependencies:
       - jiti
@@ -2653,7 +2639,8 @@ snapshots:
       mime-types: 2.1.35
     optional: true
 
-  typescript@5.6.3: {}
+  typescript@5.6.3:
+    optional: true
 
   undici-types@6.19.8: {}
 
